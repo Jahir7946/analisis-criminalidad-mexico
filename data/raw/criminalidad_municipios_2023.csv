@@ -1,31 +1,21 @@
-estado,municipio,clave_municipio,poblacion,homicidio_doloso,feminicidio,lesiones_dolosas,robo_casa_habitacion,robo_vehiculo,robo_transeunte,robo_negocio,violacion,secuestro,extorsion,mes,año
-Ciudad de México,Álvaro Obregón,09010,749982,12,2,145,89,156,234,67,23,1,8,1,2023
-Ciudad de México,Azcapotzalco,09002,400161,8,1,98,45,89,123,34,15,0,5,1,2023
-Ciudad de México,Benito Juárez,09003,434153,15,3,167,123,201,345,89,34,2,12,1,2023
-Ciudad de México,Coyoacán,09004,614447,10,2,134,78,134,198,56,28,1,9,1,2023
-Estado de México,Ecatepec,15033,1645352,45,8,456,234,345,567,123,67,5,23,1,2023
-Estado de México,Nezahualcóyotl,15058,1077208,38,6,389,198,278,445,98,56,4,19,1,2023
-Estado de México,Naucalpan,15057,833779,22,4,234,145,189,298,78,34,2,15,1,2023
-Jalisco,Guadalajara,14039,1385629,67,12,567,345,456,678,156,89,8,34,1,2023
-Jalisco,Zapopan,14120,1434635,34,6,345,234,298,445,123,67,4,23,1,2023
-Jalisco,Tlaquepaque,14097,687127,28,5,278,167,234,356,89,45,3,18,1,2023
-Nuevo León,Monterrey,19039,1135512,45,8,445,267,356,534,134,78,6,28,1,2023
-Nuevo León,Guadalupe,19026,678006,23,4,234,145,189,289,67,34,2,15,1,2023
-Nuevo León,San Nicolás,19046,443273,15,3,167,98,134,198,45,23,1,9,1,2023
-Puebla,Puebla,21114,1692181,56,10,478,289,367,556,145,89,7,32,1,2023
-Puebla,San Pedro Cholula,21140,120459,8,1,89,45,67,98,23,12,0,4,1,2023
-Veracruz,Veracruz,30193,607209,34,6,298,178,234,345,89,56,4,21,1,2023
-Veracruz,Xalapa,30087,488531,23,4,198,123,167,234,67,34,2,14,1,2023
-Guanajuato,León,11020,1436480,67,12,556,334,445,667,178,98,8,35,1,2023
-Guanajuato,Irapuato,11017,380941,45,8,378,223,298,445,123,67,5,24,1,2023
-Chihuahua,Juárez,08037,1501551,89,16,678,401,534,801,234,134,12,45,1,2023
-Chihuahua,Chihuahua,08019,925762,34,6,334,198,267,401,123,78,5,23,1,2023
-Baja California,Tijuana,02004,1810645,78,14,645,389,501,756,198,123,10,38,1,2023
-Baja California,Mexicali,02002,1049792,45,8,445,267,334,501,134,89,6,28,1,2023
-Sonora,Hermosillo,26030,936263,34,6,334,201,267,401,123,78,5,23,1,2023
-Coahuila,Saltillo,05030,879958,23,4,234,145,189,289,78,45,3,16,1,2023
-Tamaulipas,Reynosa,28032,704767,56,10,467,278,356,534,145,89,7,31,1,2023
-Sinaloa,Culiacán,25006,994237,67,12,556,334,445,667,178,98,8,35,1,2023
-Michoacán,Morelia,16053,849053,45,8,378,223,298,445,123,67,5,24,1,2023
-Guerrero,Acapulco,12001,779566,89,16,678,401,534,801,234,134,12,45,1,2023
-Oaxaca,Oaxaca,20067,300048,23,4,198,123,167,234,67,34,2,14,1,2023
+municipio,estado,poblacion,delitos_totales,tasa_criminalidad,nivel_riesgo,año
+Tijuana,Baja California,1810645,463988,25625.56,Alto,2022
+Ecatepec,Estado de México,1645352,484831,29466.7,Alto,2022
+Guadalajara,Jalisco,1385629,464903,33551.77,Alto,2022
+Puebla,Puebla,1576259,417945,26515.0,Alto,2022
+Ciudad Juárez,Chihuahua,1501551,440450,29333.0,Alto,2022
+León,Guanajuato,1238962,368797,29766.61,Alto,2022
+Zapopan,Jalisco,1155790,372897,32263.39,Alto,2022
+Monterrey,Nuevo León,1135512,319217,28112.16,Alto,2022
+Nezahualcóyotl,Estado de México,1077208,342662,31810.2,Alto,2022
+Chihuahua,Chihuahua,925762,259262,28005.25,Alto,2022
+Naucalpan,Estado de México,833779,242469,29080.73,Alto,2022
+Mérida,Yucatán,892363,259697,29102.17,Alto,2022
+Álvaro Obregón,Ciudad de México,749982,262069,34943.37,Alto,2022
+San Luis Potosí,San Luis Potosí,824229,284358,34499.88,Alto,2022
+Tlalnepantla,Estado de México,664225,229051,34483.95,Alto,2022
+Acapulco,Guerrero,779566,195764,25111.92,Alto,2022
+Guadalupe,Nuevo León,678006,177569,26189.89,Alto,2022
+Tlaquepaque,Jalisco,664193,205409,30926.1,Alto,2022
+Cancún,Quintana Roo,628306,201579,32082.93,Alto,2022
+Cuernavaca,Morelos,365168,111071,30416.41,Alto,2022
