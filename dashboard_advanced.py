@@ -44,29 +44,61 @@ def get_data():
 def create_sunburst_chart(df):
     """Crea gráfico sunburst estilo D3.js para categorías de riesgo"""
     if len(df) == 0:
-        return {}
+        return go.Figure()
     
-    # Preparar datos para sunburst
-    df_sunburst = df.copy()
-    df_sunburst['Total'] = 'México'
+    try:
+        # Preparar datos para sunburst de manera más simple
+        categories = df['Categoria_Riesgo'].unique()
+        
+        # Crear listas para el sunburst
+        labels = ['México']  # Root
+        parents = ['']       # Root parent
+        values = [df['Número de Delitos'].sum()]  # Total
+        
+        # Agregar categorías
+        for cat in categories:
+            labels.append(cat)
+            parents.append('México')
+            values.append(df[df['Categoria_Riesgo'] == cat]['Número de Delitos'].sum())
+        
+        # Agregar estados (solo top 10 para evitar sobrecarga)
+        df_top = df.nlargest(10, 'Número de Delitos')
+        for _, row in df_top.iterrows():
+            labels.append(row['Estado'])
+            parents.append(row['Categoria_Riesgo'])
+            values.append(row['Número de Delitos'])
+        
+        fig = go.Figure(go.Sunburst(
+            labels=labels,
+            parents=parents,
+            values=values,
+            branchvalues="total",
+            hovertemplate='<b>%{label}</b><br>Delitos: %{value:,}<br>Porcentaje: %{percentParent:.1%}<extra></extra>',
+            maxdepth=3,
+            insidetextorientation='radial'
+        ))
+        
+        fig.update_layout(
+            title="Distribución Jerárquica - Top 10 Estados por Categoría de Riesgo",
+            font_size=12,
+            height=600,
+            margin=dict(t=50, l=0, r=0, b=0)
+        )
+        
+        return fig
     
-    fig = go.Figure(go.Sunburst(
-        labels=list(df_sunburst['Estado']) + list(df_sunburst['Categoria_Riesgo'].unique()) + ['México'],
-        parents=['México'] * len(df_sunburst) + ['México'] * len(df_sunburst['Categoria_Riesgo'].unique()) + [''],
-        values=list(df_sunburst['Número de Delitos']) + [df_sunburst[df_sunburst['Categoria_Riesgo']==cat]['Número de Delitos'].sum() 
-                                                        for cat in df_sunburst['Categoria_Riesgo'].unique()] + [df_sunburst['Número de Delitos'].sum()],
-        branchvalues="total",
-        hovertemplate='<b>%{label}</b><br>Delitos: %{value:,}<br>Porcentaje: %{percentParent}<extra></extra>',
-        maxdepth=2,
-    ))
-    
-    fig.update_layout(
-        title="Distribución Jerárquica de Criminalidad por Estado y Categoría",
-        font_size=12,
-        height=600
-    )
-    
-    return fig
+    except Exception as e:
+        print(f"Error creando sunburst: {e}")
+        # Fallback: crear gráfico de dona simple
+        fig = px.pie(
+            df.groupby('Categoria_Riesgo')['Número de Delitos'].sum().reset_index(),
+            values='Número de Delitos',
+            names='Categoria_Riesgo',
+            title='Distribución por Categoría de Riesgo',
+            hole=0.4
+        )
+        fig.update_layout(height=600)
+        return fig
 
 def create_treemap_chart(df):
     """Crea treemap interactivo estilo Flourish"""
