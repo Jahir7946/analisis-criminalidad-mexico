@@ -1,11 +1,11 @@
 """
 Aplicación principal para despliegue en Render
-Dashboard optimizado para datos de incidencias.xlsx
+Dashboard avanzado con visualizaciones estilo D3.js y Flourish
 """
 
 import os
 import sys
-from dashboard_incidencias import app
+from dashboard_advanced import app
 
 # Exponer el servidor para Gunicorn
 server = app.server
