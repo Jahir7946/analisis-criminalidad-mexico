@@ -1,10 +1,11 @@
 """
 Aplicación principal para despliegue en Render
+Dashboard optimizado para datos de incidencias.xlsx
 """
 
 import os
 import sys
-from dashboard import app
+from dashboard_incidencias import app
 
 # Exponer el servidor para Gunicorn
 server = app.server

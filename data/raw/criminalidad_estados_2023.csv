@@ -1,0 +1,33 @@
+Estado,Número de Delitos,Porcentaje de Incidencia,Año,Ranking,Categoria_Riesgo
+Estado de México,29677,0.1763,2023,1,Muy Alto
+Ciudad de México,16933,0.1006,2023,2,Muy Alto
+Guanajuato,14069,0.0836,2023,3,Alto
+Jalisco,9029,0.0536,2023,4,Alto
+Baja California,8058,0.0479,2023,5,Medio
+Puebla,6908,0.041,2023,6,Medio
+Nuevo León,6798,0.0404,2023,7,Medio
+Veracruz,6336,0.0376,2023,8,Medio
+Chihuahua,6266,0.0372,2023,9,Medio
+Coahuila,5741,0.0341,2023,10,Medio
+San Luis Potosí,5047,0.03,2023,11,Medio
+Hidalgo,4912,0.0292,2023,12,Medio
+Quintana Roo,4682,0.0278,2023,13,Medio
+Querétaro,4608,0.0274,2023,14,Medio
+Michoacán,3967,0.0236,2023,15,Medio
+Tabasco,3887,0.0231,2023,16,Medio
+Morelos,3607,0.0214,2023,17,Medio
+Sinaloa,3450,0.0205,2023,18,Medio
+Tamaulipas,3443,0.0205,2023,19,Medio
+Aguascalientes,3162,0.0188,2023,20,Bajo
+Sonora,2844,0.0169,2023,21,Bajo
+Oaxaca,2431,0.0144,2023,22,Bajo
+Colima,2246,0.0133,2023,23,Bajo
+Baja California Sur,2183,0.013,2023,24,Bajo
+Zacatecas,1967,0.0117,2023,25,Bajo
+Guerrero,1891,0.0112,2023,26,Bajo
+Durango,1641,0.0098,2023,27,Bajo
+Nayarit,763,0.0045,2023,28,Bajo
+Chiapas,638,0.0038,2023,29,Bajo
+Campeche,482,0.0029,2023,30,Bajo
+Yucatán,433,0.0026,2023,31,Bajo
+Tlaxcala,202,0.0012,2023,32,Bajo
