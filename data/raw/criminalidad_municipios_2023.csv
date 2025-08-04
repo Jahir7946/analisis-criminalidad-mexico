@@ -1,21 +1,21 @@
 municipio,estado,poblacion,delitos_totales,tasa_criminalidad,nivel_riesgo,año
-Tijuana,Baja California,1810645,463988,25625.56,Alto,2022
-Ecatepec,Estado de México,1645352,484831,29466.7,Alto,2022
-Guadalajara,Jalisco,1385629,464903,33551.77,Alto,2022
-Puebla,Puebla,1576259,417945,26515.0,Alto,2022
-Ciudad Juárez,Chihuahua,1501551,440450,29333.0,Alto,2022
-León,Guanajuato,1238962,368797,29766.61,Alto,2022
-Zapopan,Jalisco,1155790,372897,32263.39,Alto,2022
-Monterrey,Nuevo León,1135512,319217,28112.16,Alto,2022
-Nezahualcóyotl,Estado de México,1077208,342662,31810.2,Alto,2022
-Chihuahua,Chihuahua,925762,259262,28005.25,Alto,2022
-Naucalpan,Estado de México,833779,242469,29080.73,Alto,2022
-Mérida,Yucatán,892363,259697,29102.17,Alto,2022
-Álvaro Obregón,Ciudad de México,749982,262069,34943.37,Alto,2022
-San Luis Potosí,San Luis Potosí,824229,284358,34499.88,Alto,2022
-Tlalnepantla,Estado de México,664225,229051,34483.95,Alto,2022
-Acapulco,Guerrero,779566,195764,25111.92,Alto,2022
-Guadalupe,Nuevo León,678006,177569,26189.89,Alto,2022
-Tlaquepaque,Jalisco,664193,205409,30926.1,Alto,2022
-Cancún,Quintana Roo,628306,201579,32082.93,Alto,2022
-Cuernavaca,Morelos,365168,111071,30416.41,Alto,2022
+Fuente: Incidencia delictiva,Estado_Desconocido,142881,44242,30964.23,Alto,2023
+Estados Unidos Mexicanos,Estado_Desconocido,1035588,12665,1222.98,Bajo,2023
+Valor,Estado_Desconocido,1503771,32313,2148.8,Bajo,2023
+cve_entidad,desc_entidad,1983296,10060,507.24,Bajo,2023
+00,Estados Unidos Mexicanos,689532,71,10.3,Bajo,2023
+00,Estados Unidos Mexicanos,453088,176,38.88,Bajo,2023
+00,Estados Unidos Mexicanos,693728,90,13.09,Bajo,2023
+00,Estados Unidos Mexicanos,1050393,232,22.09,Bajo,2023
+00,Estados Unidos Mexicanos,1795693,462,25.74,Bajo,2023
+00,Estados Unidos Mexicanos,1005883,165,16.5,Bajo,2023
+00,Estados Unidos Mexicanos,221160,16003103,7235984.36,Alto,2023
+00,Estados Unidos Mexicanos,1990789,124302527,6243882.55,Alto,2023
+00,Estados Unidos Mexicanos,1507626,5577151,369929.35,Alto,2023
+00,Estados Unidos Mexicanos,143085,16712,11680.03,Medio,2023
+00,Estados Unidos Mexicanos,369430,6265,1695.97,Bajo,2023
+00,Estados Unidos Mexicanos,394296,6815,1728.43,Bajo,2023
+00,Estados Unidos Mexicanos,1417343,16212,1143.84,Bajo,2023
+00,Estados Unidos Mexicanos,239520,6871,2868.9,Bajo,2023
+00,Estados Unidos Mexicanos,1499204,12224,815.37,Bajo,2023
+00,Estados Unidos Mexicanos,1756403,50217,2859.11,Bajo,2023
