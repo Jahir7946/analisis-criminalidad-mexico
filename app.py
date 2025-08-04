@@ -1,11 +1,11 @@
 """
 Aplicación principal para despliegue en Render
-Dashboard avanzado con visualizaciones estilo D3.js y Flourish
+Dashboard Premium con interfaz moderna y sofisticada
 """
 
 import os
 import sys
-from dashboard_advanced import app
+from dashboard_premium import app
 
 # Exponer el servidor para Gunicorn
 server = app.server
