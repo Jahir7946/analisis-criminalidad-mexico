@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: analisis-criminalidad-mexico
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: DATABASE_NAME
+        value: criminalidad_mexico
+      - key: DASH_HOST
+        value: 0.0.0.0
+      - key: DASH_PORT
+        fromGroup: web
+      - key: DASH_DEBUG
+        value: false
