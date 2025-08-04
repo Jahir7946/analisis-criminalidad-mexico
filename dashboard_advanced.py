@@ -36,10 +36,15 @@ def get_data():
     except Exception as e:
         print(f"Error obteniendo datos de MongoDB: {e}")
         try:
-            df = pd.read_csv('data/raw/criminalidad_estados_2023.csv')
+            df = pd.read_csv('data/raw/criminalidad_estados_junio_2025.csv')
             return df
         except:
-            return pd.DataFrame()
+            # Fallback al archivo anterior si existe
+            try:
+                df = pd.read_csv('data/raw/criminalidad_estados_2023.csv')
+                return df
+            except:
+                return pd.DataFrame()
 
 def create_sunburst_chart(df):
     """Crea gráfico sunburst estilo D3.js para categorías de riesgo"""
@@ -312,7 +317,7 @@ app = dash.Dash(__name__)
 app.layout = html.Div([
     # Header
     html.Div([
-        html.H1("🚨 Dashboard Avanzado - Criminalidad México 2023", 
+        html.H1("🚨 Dashboard Avanzado - Criminalidad México Junio 2025", 
                 style={'textAlign': 'center', 'color': '#2c3e50', 'marginBottom': 10}),
         html.P("Visualizaciones Interactivas Estilo D3.js y Flourish", 
                style={'textAlign': 'center', 'color': '#7f8c8d', 'fontSize': '1.2em'})
@@ -393,7 +398,7 @@ app.layout = html.Div([
     
     # Footer
     html.Footer([
-        html.P("Dashboard Avanzado - Análisis de Criminalidad México 2023", 
+        html.P("Dashboard Avanzado - Análisis de Criminalidad México Junio 2025", 
                style={'textAlign': 'center', 'color': '#7f8c8d', 'marginTop': 30}),
         html.P("Visualizaciones inspiradas en D3.js y Flourish Studio", 
                style={'textAlign': 'center', 'color': '#95a5a6', 'fontSize': '0.9em'})

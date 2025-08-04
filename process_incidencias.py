@@ -50,7 +50,9 @@ def process_incidencias():
         # Limpiar y preparar datos
         df_clean = df.copy()
         df_clean['Estado'] = df_clean['Estado'].str.strip()
-        df_clean['Año'] = 2023  # Agregar año por defecto
+        df_clean['Año'] = 2025  # Datos de Junio 2025
+        df_clean['Mes'] = 'Junio'
+        df_clean['Periodo'] = 'Junio 2025'
         
         # Crear datos adicionales para el análisis
         df_clean['Ranking'] = df_clean['Número de Delitos'].rank(method='dense', ascending=False).astype(int)
@@ -61,7 +63,7 @@ def process_incidencias():
         )
         
         # Guardar CSV procesado
-        csv_path = 'data/raw/criminalidad_estados_2023.csv'
+        csv_path = 'data/raw/criminalidad_estados_junio_2025.csv'
         df_clean.to_csv(csv_path, index=False, encoding='utf-8')
         print(f"✅ Datos guardados en: {csv_path}")
         
